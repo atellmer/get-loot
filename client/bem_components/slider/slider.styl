@@ -1,0 +1,43 @@
+@import 'nib'
+
+.slider-area .slider
+	width 100%
+	height auto
+	background-color #56595e
+	@media screen and (max-width:600px)
+		display none
+	
+.slider-area .slider-controls
+	position absolute
+	bottom 0
+	right 0
+	width auto
+	height 40px
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content center
+	align-items center
+	
+.slider-area .slider-controls__btn
+	width 40px
+	height 40px
+	background-color #FFF
+	cursor pointer
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content center
+	align-items center
+	text-decoration none!important
+	transition all .2s ease-in-out
+	&:hover
+		text-decoration none!important
+		background-color #48c9b8
+	&:hover .slider-icon
+		color #FFF
+		
+.slider-area .slider-icon
+	color #000
+	transition all .2s ease-in-out
+	

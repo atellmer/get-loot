@@ -1,0 +1,89 @@
+@import 'nib'
+
+.labels
+	width 100%
+	height auto
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	justify-content center
+	align-items center
+	
+.labels__item
+	height 150px
+	width 33.3333%
+	background-color #454c52
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content center
+	align-items center
+	padding 20px
+	@media screen and (max-width:768px)
+		width 100%
+		padding 10px
+	
+.labels__item--active
+	background-color #3b4147
+	
+.shield
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	
+.shield--speed
+	width 85px
+	height 68px
+	background-image url(./img/speed.png)
+	
+.shield--protect
+	width 56px
+	height 63px
+	background-image url(./img/protect.png)
+	
+.shield--medal
+	width 52px
+	height 77px
+	background-image url(./img/medal.png)
+	
+.label-container
+	height 100%
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	
+.label-container--shield
+	width 40%
+	justify-content center
+	align-items center
+		
+.label-container--text
+	width 60%
+	color #FFF
+	justify-content flex-start
+	align-items center
+	padding 10px
+	
+.labels__title
+	text-transform uppercase
+	font-size 1.8rem
+	font-weight 900
+	@media screen and (max-width:992px)
+		font-size 1.3rem
+	
+.labels__subtitle
+	font-size 1.6rem
+	font-weight 300
+	@media screen and (max-width:992px)
+		font-size 1.2rem
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

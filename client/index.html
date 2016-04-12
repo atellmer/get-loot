@@ -11,12 +11,160 @@
 	<link rel="stylesheet" href="bem_components/common/common.css">
 	<link rel="stylesheet" href="bem_components/header/header.css">
 	<link rel="stylesheet" href="bem_components/footer/footer.css">
+	<link rel="stylesheet" href="bem_components/slider/slider.css">
+	<link rel="stylesheet" href="bem_components/labels/labels.css">
 </head>
 
 <body>
 	<div class="container-fluid">
-		<div class="content">Привет Hello</div>
+		<div class="content">
+			<header>
+				<div class="header-main-area">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-4">
+							<div class="logo">
+								<div class="logo__pic"></div>
+								<h1 class="logo__title">Игровая валюта, прокачка, рейды
+									<br> и другие услуги</h1>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-4">
+							<div class="wrap-block">
+								<div class="contacts">
+									<div class="contacts__item">
+										<div class="contacts__icon contacts__icon--phone"></div>
+										<div class="contacts__text contacts__text--phone">8 (812) <span class="contacts__text--bold">407-21-79</span></div>
+									</div>
+									<div class="contacts__item">
+										<div class="contacts__icon contacts__icon--skype"></div>
+										<div class="contacts__text contacts__text--skype">getloot_ru</div>
+									</div>
+									<div class="contacts__item">
+										<div class="contacts__icon contacts__icon--chat"></div>
+										<div class="contacts__text contacts__text--chat">чат с оператором
+											<br><span class="contacts__text--small">(с 11 до 24 по мск. времени)</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-4">
+							<div class="wrap-block">
+								<div class="social">
+									<div class="social__item">
+										<div class="social__icon social__icon--vk"></div>
+										<a class="social__link social__link--vk" href="http://vk.com/getloot-ru" target="_blank">vk.com/getloot-ru</a>
+									</div>
+									<div class="social__item">
+										<div class="social__icon social__icon--tw"></div>
+										<a class="social__link social__link--tw" href="http://twitter.com/getloot" target="_blank">twitter.com/getloot</a>
+									</div>
+									<div class="social__item">
+										<div class="social__icon social__icon--mail"></div>
+										<a class="social__link social__link--mail" href="mailto:support@getloot.ru">support@getloot.ru</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-area">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="menu">
+								<a class="menu-link" href="#">
+									<div class="menu__item">Faq</div>
+								</a>
+								<a class="menu-link" href="#">
+									<div class="menu__item">Скидки</div>
+								</a>
+								<a class="menu-link" href="#">
+									<div class="menu__item">Гарантии и отзывы</div>
+								</a>
+								<a class="menu-link" href="#">
+									<div class="menu__item">Поставщикам</div>
+								</a>
+								<a class="menu-link" href="#">
+									<div class="menu__item">Контакты</div>
+								</a>
+								<a class="menu-link" href="#">
+									<div class="menu__item">Личный кабинет</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="slider-area">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="slider">
+							<div id="main-slider" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner" role="listbox">
+									<a href="http://somelink.com" target="_blank" class="item active">
+										<img src="./img/slider/1.png" alt="">
+									</a>
+									<a href="http://somelink.com" target="_blank" class="item">
+										<img src="./img/slider/1.png" alt="">
+									</a>
+									<a href="http://somelink.com" target="_blank" class="item">
+										<img src="./img/slider/1.png" alt="">
+									</a>
+								</div>
+								<div class="slider-controls">
+									<a href="#main-slider" class="slider-controls__btn" role="button" data-slide="prev">
+										<i class="material-icons slider-icon">chevron_left</i>
+									</a>
+									<a href="#main-slider" class="slider-controls__btn" role="button" data-slide="next">
+										<i class="material-icons slider-icon">chevron_right</i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="labels-area">
+				<div class="labels">
+					<div class="labels__item">
+						<div class="label-container label-container--shield">
+							<div class="shield shield--speed"></div>
+						</div>
+						<div class="label-container label-container--text">
+							<div>
+								<div class="labels__title">Быстро</div>
+								<div class="labels__subtitle">Среднее время доставки валюты 26 минут</div>
+							</div>
+						</div>
+					</div>
+					<div class="labels__item labels__item--active">
+						<div class="label-container label-container--shield">
+							<div class="shield shield--protect"></div>
+						</div>
+						<div class="label-container label-container--text">
+							<div>
+								<div class="labels__title">Надежно</div>
+								<div class="labels__subtitle">Каждую неделю более сотни новых отзывов</div>
+							</div>
+						</div>
+					</div>
+					<div class="labels__item">
+						<div class="label-container label-container--shield">
+							<div class="shield shield--medal"></div>
+						</div>
+						<div class="label-container label-container--text">
+							<div>
+								<div class="labels__title">Проверено</div>
+								<div class="labels__subtitle">Мы успешно работаем с 2009 года</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

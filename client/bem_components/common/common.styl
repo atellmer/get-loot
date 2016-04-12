@@ -6,6 +6,13 @@ $bg-color = #FFF;
 	padding 0!important
 	margin 0!important
 	
+.flex
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content center
+	align-items center
+	
 body
 	background $bg-color
 	font-smoothing antialiased
@@ -14,7 +21,8 @@ body
 
 a, a:hover, a:active, a:focus
 	outline none
-	text-decoration none
+	color #FFF
+	text-decoration underline
 
 .container-fluid
 	background $bg-color
@@ -31,5 +39,6 @@ a, a:hover, a:active, a:focus
 	height auto
 	min-height 1800px
 	margin 0 auto
+	padding 25px
 	
 	

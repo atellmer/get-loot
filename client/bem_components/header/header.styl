@@ -1,1 +1,212 @@
 @import 'nib'
+
+.flex
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content center
+	align-items center
+	
+.header-main-area .wrap-block
+	@media screen and (max-width:600px)
+		@extend .flex
+
+.header-main-area .logo__pic
+	width 209px
+	height 39px
+	background-image url(./img/logo.png)
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	@media screen and (max-width:992px)
+		margin 0 auto
+		width 139.3px
+		height 26px
+	
+.header-main-area .logo__title
+	color #FFF
+	font-weight 500
+	font-size 1.7rem
+	margin 20px 0
+	@media screen and (max-width:992px)
+		text-align center
+		font-size 1.3rem
+		
+.header-main-area .contacts
+	display inline-block
+	
+.header-main-area .contacts__icon
+	position relative
+	margin  0 12px
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	display inline-block
+	transition all .2s ease-in-out
+	@media screen and (max-width:600px)
+		display block
+		margin 0 auto
+	
+.header-main-area .contacts__icon--phone
+	top 3px
+	width 21px
+	height 21px
+	background-image url(./img/icons/phone.png)
+	@media screen and (max-width:600px)
+		top 0
+		
+.header-main-area .contacts__icon--skype
+	top 3px
+	width 21px
+	height 23px
+	background-image url(./img/icons/skype.png)
+	@media screen and (max-width:600px)
+		top 0
+	
+.header-main-area .contacts__icon--chat
+	top -5px
+	width 21px
+	height 20px
+	background-image url(./img/icons/chat.png)
+	@media screen and (max-width:600px)
+		top 0
+	
+.header-main-area .contacts__text
+	color #FFF
+	display inline-block
+	font-weight 300
+	line-height 1
+	transition all .2s ease-in-out
+	@media screen and (max-width:600px)
+		font-size 1.2rem!important
+		display block
+		text-align center
+		margin 3px 0
+	
+.header-main-area .contacts__text--bold
+	font-weight 900
+	
+.header-main-area .contacts__item
+	margin-bottom 10px
+	
+.header-main-area .contacts__text--phone
+	font-size 2rem
+	
+.header-main-area .contacts__text--skype
+	font-size 1.7rem
+	position relative
+	top -5px
+	@media screen and (max-width:600px)
+		top 0px
+		
+.header-main-area .contacts__text--chat
+	font-size 1.7rem
+
+.contacts__text--small
+	font-size 1.2rem
+	@media screen and (max-width:600px)
+		display none
+	
+.header-main-area .social	
+	display inline-block
+	
+.header-main-area .social__icon
+	position relative
+	margin  0 17px
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	display inline-block
+	@media screen and (max-width:600px)
+		display block
+		margin 0 auto
+	
+.header-main-area .social__icon--vk
+	top 3px
+	width 22px
+	height 22px
+	transition all .2s ease-in-out
+	background-image url(./img/icons/vk.png)
+	
+.header-main-area .social__icon--tw
+	top 3px
+	width 22px
+	height 22px
+	transition all .2s ease-in-out
+	background-image url(./img/icons/tw.png)
+	
+.header-main-area .social__icon--mail
+	top 3px
+	width 25px
+	height 17px
+	transition all .2s ease-in-out
+	background-image url(./img/icons/mail.png)
+	@media screen and (max-width:600px)
+		top 0
+	
+.header-main-area .social__link
+	position relative
+	top -4px
+	color #FFF
+	font-size 1.6rem
+	transition all .2s ease-in-out
+	@media screen and (max-width:600px)
+		font-size 1.2rem!important
+		display block
+		top 3px
+		
+.header-main-area .social__item
+	margin-bottom 10px
+	&:hover .social__link
+		color #46ebd6
+	&:hover .social__icon--vk
+		background-image url(./img/icons/vk-h.png)
+	&:hover .social__icon--tw
+		background-image url(./img/icons/tw-h.png)
+	&:hover .social__icon--mail
+		background-image url(./img/icons/mail-h.png)
+		
+.header-main-area .social__link--mail
+	top -1px
+	
+.menu-area .menu
+	position relative
+	width 100%
+	height auto
+	min-height 55px
+	background-color #FFF
+	margin 20px 0 0 0
+	text-align center
+	@media screen and (max-width:600px)
+		padding 20px 0
+	
+.menu-area .menu-link, .menu-area .menu-link:hover, .menu-area .menu-link:active, .menu-area .menu-link:focus
+	color #000
+	text-decoration none
+	text-transform uppercase
+	font-weight 900
+	padding 20px 30px
+	display inline-block
+	transition all .2s ease-in-out
+	margin-left -4px
+	@media screen and (max-width:600px)
+		display block
+		padding 10px 30px
+		margin-left 0px
+	&:hover
+		background-color #48c9b8
+	&:hover .menu__item
+		color #FFF
+		transition all .2s ease-in-out
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
