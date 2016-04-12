@@ -158,6 +158,7 @@
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 900;
+  letter-spacing: 1px;
 }
 @media screen and (max-width: 992px) {
   .labels-area .labels__title {
@@ -167,6 +168,8 @@
 .labels-area .labels__subtitle {
   font-size: 1.6rem;
   font-weight: 300;
+  line-height: 1;
+  margin: 10px 0;
 }
 @media screen and (max-width: 992px) {
   .labels-area .labels__subtitle {

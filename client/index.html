@@ -10,10 +10,10 @@
 	<link rel="stylesheet" href="/fonts/fonts.css">
 	<link rel="stylesheet" href="/bem_components/common/common.css">
 	<link rel="stylesheet" href="/bem_components/header/header.css">
-	<link rel="stylesheet" href="/bem_components/footer/footer.css">
 	<link rel="stylesheet" href="/bem_components/slider/slider.css">
 	<link rel="stylesheet" href="/bem_components/labels/labels.css">
 	<link rel="stylesheet" href="/bem_components/main-content/main-content.css">
+	<link rel="stylesheet" href="/bem_components/footer/footer.css">
 </head>
 
 <body>
@@ -297,11 +297,74 @@
 					</div>
 				</div>
 			</div>
+			<footer>
+				<div class="footer-area">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<div class="footer-menu">
+										<a href="#" class="footer-menu__item">Главная</a>
+										<a href="#" class="footer-menu__item">Каталог</a>
+										<a href="#" class="footer-menu__item">Faq</a>
+										<a href="#" class="footer-menu__item">гарантии</a>
+										<a href="#" class="footer-menu__item">Поставщикам</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<div class="footer-menu">
+										<a href="#" class="footer-menu__item">Контакты</a>
+										<a href="#" class="footer-menu__item">Оферта</a>
+										<a href="#" class="footer-menu__item">Отзывы</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="vk-vidget">
+								<div id="vkGroups"></div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="contacts">
+								<div class="contacts__text contacts__text--phone">8 (812) <span class="contacts__text--bold">407-21-79</span></div>
+								<div class="contacts__note">Время работы консультантов
+									<br> c 11.00 - 24.00 по московскому времени</div>
+							</div>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-6">
+							<div class="copyright">
+								GetLoot.ru &ndash; интернет-магазин игровой валюты,
+								<br> игр и услуг для игроков. &copy 2016
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6">
+							<div class="logo">
+								<div class="logo__pic"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</div>
 
 	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="//vk.com/js/api/openapi.js?121"></script>
+	<script>
+		VK.Widgets.Group('vkGroups', {
+			mode: 1,
+			width: '280',
+			height: '400',
+			color1: 'FFFFFF',
+			color2: '525252',
+			color3: '808080'
+		}, 33533628);
+	</script>
 </body>
 
 </html>

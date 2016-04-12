@@ -1,4 +1,4 @@
-.main-content {
+.main-content-area .main-content {
   position: relative;
   width: 100%;
   height: auto;
@@ -6,7 +6,7 @@
   background-color: #fff;
   z-index: 4;
 }
-.card {
+.main-content-area .card {
   width: 100%;
   height: auto;
   background-position: center;
@@ -45,21 +45,21 @@
   -webkit-align-items: center;
   align-items: center;
 }
-.card--big {
+.main-content-area .card--big {
   height: 360px;
 }
 @media screen and (max-width: 600px) {
-  .card--big {
+  .main-content-area .card--big {
     height: 260px;
   }
 }
-.card--mini {
+.main-content-area .card--mini {
   height: 200px;
 }
-.card-item {
+.main-content-area .card-item {
   margin: 10px;
 }
-.card__title {
+.main-content-area .card__title {
   color: #fff;
   text-transform: uppercase;
   font-weight: 900;
@@ -72,55 +72,55 @@
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.card__title:hover {
+.main-content-area .card__title:hover {
   background-color: #009688;
 }
-.card__title--big {
+.main-content-area .card__title--big {
   font-size: 2.5rem;
 }
 @media screen and (max-width: 600px) {
-  .card__title--big {
+  .main-content-area .card__title--big {
     font-size: 1.8rem;
   }
 }
-.card__title--small {
+.main-content-area .card__title--small {
   font-size: 1.7rem;
 }
 @media screen and (max-width: 600px) {
-  .card__title--small {
+  .main-content-area .card__title--small {
     font-size: 1.8rem;
   }
 }
-.card__subtitle {
+.main-content-area .card__subtitle {
   color: #fff;
   background-color: #444b51;
   padding: 3px 10px;
   position: relative;
   line-height: 0;
 }
-.card__subtitle--big {
+.main-content-area .card__subtitle--big {
   font-size: 1.8rem;
   top: 6px;
 }
 @media screen and (max-width: 600px) {
-  .card__subtitle--big {
+  .main-content-area .card__subtitle--big {
     top: 4px;
     font-size: 1.5rem;
   }
 }
-.card__subtitle--small {
+.main-content-area .card__subtitle--small {
   font-size: 1.4rem;
   top: 4px;
 }
 @media screen and (max-width: 600px) {
-  .card__subtitle--small {
+  .main-content-area .card__subtitle--small {
     top: 1px;
     font-size: 1.2rem;
   }
 }
-.card__link,
-.card__link:hover,
-.card__link:focus,
-.card__link:active {
+.main-content-area .card__link,
+.main-content-area .card__link:hover,
+.main-content-area .card__link:focus,
+.main-content-area .card__link:active {
   text-decoration: none;
 }
