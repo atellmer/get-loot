@@ -1,7 +1,9 @@
 .slider-area .slider {
+  position: relative;
   width: 100%;
   height: auto;
   background-color: #56595e;
+  z-index: 2;
 }
 @media screen and (max-width: 600px) {
   .slider-area .slider {

@@ -1,6 +1,7 @@
 @import 'nib'
 
-.labels
+.labels-area .labels
+	position relative
 	width 100%
 	height auto
 	display flex
@@ -8,8 +9,9 @@
 	flex-wrap wrap
 	justify-content center
 	align-items center
+	z-index 3
 	
-.labels__item
+.labels-area .labels__item
 	height 150px
 	width 33.3333%
 	background-color #454c52
@@ -23,55 +25,55 @@
 		width 100%
 		padding 10px
 	
-.labels__item--active
+.labels-area .labels__item--active
 	background-color #3b4147
 	
-.shield
+.labels-area .shield
 	background-position center
 	background-repeat no-repeat
 	background-size cover
 	
-.shield--speed
+.labels-area .shield--speed
 	width 85px
 	height 68px
 	background-image url(./img/speed.png)
 	
-.shield--protect
+.labels-area .shield--protect
 	width 56px
 	height 63px
 	background-image url(./img/protect.png)
 	
-.shield--medal
+.labels-area .shield--medal
 	width 52px
 	height 77px
 	background-image url(./img/medal.png)
 	
-.label-container
+.labels-area .label-container
 	height 100%
 	display flex
 	flex-direction row
 	flex-wrap nowrap
 	
-.label-container--shield
+.labels-area .label-container--shield
 	width 40%
 	justify-content center
 	align-items center
 		
-.label-container--text
+.labels-area .label-container--text
 	width 60%
 	color #FFF
 	justify-content flex-start
 	align-items center
 	padding 10px
 	
-.labels__title
+.labels-area .labels__title
 	text-transform uppercase
 	font-size 1.8rem
 	font-weight 900
 	@media screen and (max-width:992px)
 		font-size 1.3rem
 	
-.labels__subtitle
+.labels-area .labels__subtitle
 	font-size 1.6rem
 	font-weight 300
 	@media screen and (max-width:992px)
