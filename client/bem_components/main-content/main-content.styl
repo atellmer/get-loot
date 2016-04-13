@@ -4,6 +4,7 @@
 	position relative
 	width 100%
 	height auto
+	min-height 1200px
 	padding 10px 10px 55px 10px
 	background-color #FFF
 	z-index 4
@@ -22,6 +23,11 @@
 	
 .main-content-area .card--big
 	height 360px
+	@media screen and (max-width:600px)
+		height 260px
+		
+.main-content-area .card--category
+	height 230px
 	@media screen and (max-width:600px)
 		height 260px
 		
@@ -79,6 +85,7 @@
 .main-content-area .card__link:active
 	text-decoration none
 	
+
 	
 	
 	

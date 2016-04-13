@@ -1,0 +1,75 @@
+@import 'nib'
+
+.category-head-area .category-head
+	position relative
+	width 100%
+	height auto
+	min-height 170px
+	background-color #FFF
+	z-index 5
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content center
+	align-items center
+	@media screen and (max-width:600px)
+		min-height 120px
+	
+.category-head-area .category-head__title
+	font-size 3.3rem
+	font-weight 900
+	color #000
+	text-transform uppercase
+	border 2px solid #000
+	padding 10px 30px
+	user-select none
+	@media screen and (max-width:600px)
+		font-size 1.2rem
+		padding 10px 10px
+		
+.category-head-area .category-controls
+	position absolute
+	bottom 65px
+	left  0
+	width auto
+	height 40px
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content center
+	align-items center
+	@media screen and (max-width:600px)
+		bottom 41px
+	
+.category-head-area .category-controls__btn
+	width 40px
+	height 40px
+	background-color #FFF
+	cursor pointer
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content center
+	align-items center
+	text-decoration none!important
+	transition all .2s ease-in-out
+	background-color #48c9b8
+
+.category-head-area .category-icon
+	color #FFF
+	transition all .2s ease-in-out
+	
+.category-head-area .category-row
+	text-transform uppercase
+	margin 0 20px
+	font-size 1.3rem
+	font-weight 900
+	@media screen and (max-width:992px)
+		font-size 1rem
+		margin 0 5px
+	@media screen and (max-width:768px)
+		display none
+	
+	
+	
+	

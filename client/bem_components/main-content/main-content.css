@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: auto;
+  min-height: 1200px;
   padding: 10px 10px 55px 10px;
   background-color: #fff;
   z-index: 4;
@@ -50,6 +51,14 @@
 }
 @media screen and (max-width: 600px) {
   .main-content-area .card--big {
+    height: 260px;
+  }
+}
+.main-content-area .card--category {
+  height: 230px;
+}
+@media screen and (max-width: 600px) {
+  .main-content-area .card--category {
     height: 260px;
   }
 }
