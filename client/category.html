@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="/fonts/fonts.css">
 	<link rel="stylesheet" href="/bem_components/common/common.css">
 	<link rel="stylesheet" href="/bem_components/header/header.css">
+	<link rel="stylesheet" href="/bem_components/slider/slider.css">
+	<link rel="stylesheet" href="/bem_components/labels/labels.css">
 	<link rel="stylesheet" href="/bem_components/category-head/category-head.css">
 	<link rel="stylesheet" href="/bem_components/main-content/main-content.css">
 	<link rel="stylesheet" href="/bem_components/footer/footer.css">
@@ -68,33 +70,70 @@
 					</div>
 				</div>
 				<div class="menu-area">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="menu paper-shadow-z2">
-								<a class="menu-link" href="#">
-									<div class="menu__item">Faq</div>
-								</a>
-								<a class="menu-link" href="#">
-									<div class="menu__item">Скидки</div>
-								</a>
-								<a class="menu-link" href="#">
-									<div class="menu__item">Гарантии и отзывы</div>
-								</a>
-								<a class="menu-link" href="#">
-									<div class="menu__item">Поставщикам</div>
-								</a>
-								<a class="menu-link" href="#">
-									<div class="menu__item">Контакты</div>
-								</a>
-								<a class="menu-link" href="#">
-									<div class="menu__item">Личный кабинет</div>
-								</a>
+					<div class="menu--desktop">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="menu paper-shadow-z2">
+									<a class="menu-link" href="#">
+										<div class="menu__item">Faq</div>
+									</a>
+									<a class="menu-link" href="#">
+										<div class="menu__item">Скидки</div>
+									</a>
+									<a class="menu-link" href="#">
+										<div class="menu__item">Гарантии и отзывы</div>
+									</a>
+									<a class="menu-link" href="#">
+										<div class="menu__item">Поставщикам</div>
+									</a>
+									<a class="menu-link" href="#">
+										<div class="menu__item">Контакты</div>
+									</a>
+									<a class="menu-link" href="#">
+										<div class="menu__item">Личный кабинет</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="menu--mobile">
+						<div id="menuBtn" class="menu--mobile__btn">
+							<i class="material-icons menu--mobile__icon">menu</i>
+						</div>
+						<div id="menuContent" class="menu--mobile__content paper-shadow-z2">
+							<ul class="menu-list">
+								<div class="menu-margin"></div>
+								<div class="menu-divider"></div>
+								<a href="#" class="menu-link--mobile">
+									<li class="list__item" aria-haspopup="true">Faq</li>
+									<div class="menu-divider"></div>
+								</a>
+								<a href="#" class="menu-link--mobile">
+									<li class="list__item" aria-haspopup="true">Скидки</li>
+									<div class="menu-divider"></div>
+								</a>
+								<a href="#" class="menu-link--mobile">
+									<li class="list__item" aria-haspopup="true">Гарантии и отзывы</li>
+									<div class="menu-divider"></div>
+								</a>
+								<a href="#" class="menu-link--mobile">
+									<li class="list__item" aria-haspopup="true">Поставщикам</li>
+									<div class="menu-divider"></div>
+								</a>
+								<a href="#" class="menu-link--mobile">
+									<li class="list__item" aria-haspopup="true">Контакты</li>
+									<div class="menu-divider"></div>
+								</a>
+								<a href="#" class="menu-link--mobile">
+									<li class="list__item" aria-haspopup="true">Личный кабинет</li>
+									<div class="menu-divider"></div>
+								</a>
+							</ul>
+						</div>
+						<div id="menuOverlay" class="menu--mobile__overlay"></div>
+					</div>
 				</div>
 			</header>
-
 			<div class="category-head-area">
 				<div class="category-head">
 					<div class="category-controls">
@@ -273,6 +312,7 @@
 
 	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/bem_components/header/scripts/mobile-menu.js"></script>
 	<script src="//vk.com/js/api/openapi.js?121"></script>
 	<script>
 		VK.Widgets.Group('vkGroups', {
