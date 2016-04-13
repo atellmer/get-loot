@@ -16,6 +16,7 @@
 		min-height 120px
 	
 .category-head-area .category-head__title
+	position relative
 	font-size 3.3rem
 	font-weight 900
 	color #000
@@ -23,9 +24,20 @@
 	border 2px solid #000
 	padding 10px 30px
 	user-select none
+	background-color #FFF
+	z-index 5
+	@media screen and (max-width:992px)
+		font-size 2rem
 	@media screen and (max-width:600px)
 		font-size 1.1rem
 		padding 10px
+		
+.category-head-area .category-head__title--less-font
+	font-size 3rem
+	@media screen and (max-width:992px)
+		font-size 2rem
+	@media screen and (max-width:600px)
+		font-size 1rem
 		
 .category-head-area .category-controls
 	position absolute
@@ -38,10 +50,12 @@
 	flex-wrap nowrap
 	justify-content center
 	align-items center
+	background-color #f4f4f4
 	@media screen and (max-width:600px)
-		bottom 40px
+		bottom 80px
 	
 .category-head-area .category-controls__btn
+	position relative
 	width 40px
 	height 40px
 	background-color #FFF
@@ -65,9 +79,6 @@
 	font-size 1.3rem
 	font-weight 900
 	@media screen and (max-width:992px)
-		font-size 1rem
-		margin 0 5px
-	@media screen and (max-width:768px)
 		display none
 	
 	
