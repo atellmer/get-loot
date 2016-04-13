@@ -34,6 +34,11 @@
   align-items: center;
   z-index: 3;
 }
+@media screen and (max-width: 768px) {
+  .labels-area .labels {
+    display: none;
+  }
+}
 .labels-area .labels__item {
   height: 150px;
   width: 33.3333%;

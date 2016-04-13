@@ -55,8 +55,8 @@
 }
 @media screen and (max-width: 600px) {
   .category-head-area .category-head__title {
-    font-size: 1.2rem;
-    padding: 10px 10px;
+    font-size: 1.1rem;
+    padding: 10px;
   }
 }
 .category-head-area .category-controls {
@@ -98,7 +98,7 @@
 }
 @media screen and (max-width: 600px) {
   .category-head-area .category-controls {
-    bottom: 41px;
+    bottom: 40px;
   }
 }
 .category-head-area .category-controls__btn {
