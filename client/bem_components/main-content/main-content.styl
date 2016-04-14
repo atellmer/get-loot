@@ -20,6 +20,8 @@
 	flex-wrap nowrap
 	justify-content center
 	align-items center
+	&:hover .card__title
+		background-color #00897B
 	
 .main-content-area .card--big
 	height 360px
@@ -105,12 +107,15 @@
 	padding 20px
 	
 .main-content-area .card-price
-	margin-top -15px
 	line-height 0
+	transform translateY(-15px)
 	
-.main-content-area .rub-symbol
-	font-family 'PT Sans', serif
-	
+.main-content-area .rub
+	display inline-block
+	line-height 5px
+	border-bottom 1px solid #FFF
+	width 0.4em
+
 .main-content-area .content-divider
 	width calc(100% - 20px)
 	height 1px
@@ -141,6 +146,104 @@
 	font-weight 300
 	@media screen and (max-width:600px)
 		font-size 1.2rem
+		
+.main-content-area .product-description
+	padding 0 40px
+	@media screen and (max-width:600px)
+		padding 10px!important
+	
+.main-content-area .card--product
+	height 260px
+	
+.main-content-area .product-description__title
+	font-size 1.8rem
+	font-weight 900
+	text-transform uppercase
+	margin 30px 0 10px 0
+	letter-spacing 1px
+	
+.product-description__text
+	font-size 1.6rem
+	font-weight 300
+	@media screen and (max-width:600px)
+		font-size 1.1rem
+	
+.product-description__link,
+.product-description__link:hover,
+.product-description__link:active,
+.product-description__link:focus
+	color #48c9b8
+	text-decoration none
+	
+.list-circle
+	display inline-block
+	width 10px
+	height 10px
+	background-color #48c9b8
+	border-radius 50%
+	margin 0 15px
+	
+.product-description
+	padding 0 40px
+	
+.product-description--left
+	padding 0 20px 0 40px!important
+	
+.product-description--right
+	padding 0 40px 0 20px!important
+	
+.product-description__price
+	font-size 4rem
+	font-weight 700
+	color #48c9b8
+	line-height 1
+	text-align right
+	
+.main-content-area .rub--big
+	line-height 12px
+	border-bottom 3px solid #48c9b8
+	width 0.4em
+	
+.control-label
+	text-transform uppercase
+	font-weight 900 
+	
+.form-control--color:focus
+	box-shadow none!important
+	border-color #48c9b8!important
+	
+.circle-question
+	display inline-block
+	width 15px
+	height 15px
+	background-color #48c9b8
+	border-radius 50%
+	position relative
+	top -3px
+	cursor pointer
+	
+.circle-question__icon
+	color #FFF
+	position relative
+	top -2px
+	right 5px
+	font-weight 400
+	
+.form-group--margin
+	margin 30px 0
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+
 
 	
 	

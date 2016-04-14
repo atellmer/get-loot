@@ -170,7 +170,7 @@
 	top -1px
 	
 .menu-area .menu--desktop
-	@media screen and (max-width:600px)
+	@media screen and (max-width:992px)
 		display none
 	
 .menu-area .menu
@@ -219,9 +219,10 @@
 		
 .menu--mobile__icon
 	color #FFF
-	position absolute
-	top 4px
-	left 3px
+	position relative
+	top 50%
+	left 50%
+	transform translate(-50%, -50%)
 	
 .menu--mobile__overlay
 	display none
@@ -284,7 +285,7 @@
 	
 .menu--mobile
 	display none
-	@media screen and (max-width:600px)
+	@media screen and (max-width:992px)
 		display block
 		
 		

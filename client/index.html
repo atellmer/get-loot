@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 	<title>Get loot</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:bold">
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="bem_components/common/common.css">
 	<link rel="stylesheet" href="bem_components/header/header.css">
@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="bem_components/category-head/category-head.css">
 	<link rel="stylesheet" href="bem_components/main-content/main-content.css">
 	<link rel="stylesheet" href="bem_components/footer/footer.css">
+	<link rel="stylesheet" href="bem_components/select/select.css">
 </head>
 
 <body>
@@ -46,8 +47,7 @@
 									<div class="contacts__item">
 										<div class="contacts__icon contacts__icon--chat"></div>
 										<div class="contacts__text contacts__text--chat">чат с оператором
-											<br><span class="contacts__text--small">(с 11 до 24 по мск. времени)</span>
-										</div>
+											<br><span class="contacts__text--small">(с 11 до 24 по мск. времени)</span></div>
 									</div>
 								</div>
 							</div>
@@ -92,9 +92,18 @@
 									<a class="menu-link" href="#">
 										<div class="menu__item">Контакты</div>
 									</a>
-									<a class="menu-link" href="#">
-										<div class="menu__item">Личный кабинет</div>
-									</a>
+
+									<div class="logentry">
+										<a href="#" class="logentry__link">Личный кабинет</a>
+										<div>
+											<div class="logentry__email">
+												<i class="material-icons person-icon">person</i> Abracadabra@gmail.com</div>
+											<div class="logout">
+												<span>/</span>
+												<a href="#" class="logout__link">Выйти</a>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -137,206 +146,143 @@
 					</div>
 				</div>
 			</header>
-			<div class="slider-area">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="slider paper-shadow-z2">
-							<div id="main-slider" class="carousel slide" data-ride="carousel">
-								<div class="carousel-inner" role="listbox">
-									<a href="http://somelink.com" target="_blank" class="item active">
-										<img src="./img/slider/1.png" alt="">
-									</a>
-									<a href="http://somelink.com" target="_blank" class="item">
-										<img src="./img/slider/1.png" alt="">
-									</a>
-									<a href="http://somelink.com" target="_blank" class="item">
-										<img src="./img/slider/1.png" alt="">
-									</a>
-								</div>
-								<div class="slider-controls">
-									<a href="#main-slider" class="slider-controls__btn" role="button" data-slide="prev">
-										<i class="material-icons slider-icon">chevron_left</i>
-									</a>
-									<a href="#main-slider" class="slider-controls__btn" role="button" data-slide="next">
-										<i class="material-icons slider-icon">chevron_right</i>
-									</a>
-								</div>
-							</div>
+
+
+
+			<div class="category-head-area">
+				<div class="category-head">
+					<div class="category-controls">
+						<div class="category-controls__btn">
+							<i class="material-icons category-icon">chevron_left</i>
 						</div>
+						<div class="category-row">World of Warcraft: лут-рейды</div>
 					</div>
+					<div class="category-head__title">Цитадель адского пламени (эпохальный режим) Лут-поход</div>
 				</div>
 			</div>
-			<div class="labels-area">
-				<div class="labels paper-shadow-z2">
-					<div class="labels__item">
-						<div class="label-container label-container--shield">
-							<div class="shield shield--speed"></div>
-						</div>
-						<div class="label-container label-container--text">
-							<div>
-								<div class="labels__title">Быстро</div>
-								<div class="labels__subtitle">Среднее время доставки валюты 26 минут</div>
-							</div>
-						</div>
-					</div>
-					<div class="labels__item labels__item--active">
-						<div class="label-container label-container--shield">
-							<div class="shield shield--protect"></div>
-						</div>
-						<div class="label-container label-container--text">
-							<div>
-								<div class="labels__title">Надежно</div>
-								<div class="labels__subtitle">Каждую неделю более сотни новых отзывов</div>
-							</div>
-						</div>
-					</div>
-					<div class="labels__item">
-						<div class="label-container label-container--shield">
-							<div class="shield shield--medal"></div>
-						</div>
-						<div class="label-container label-container--text">
-							<div>
-								<div class="labels__title">Проверено</div>
-								<div class="labels__subtitle">Мы успешно работаем с 2009 года</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
+
 			<div class="main-content-area">
 				<div class="main-content paper-shadow-z2">
 					<div class="row no-padding">
-						<div class="col-sm-6 col-md-6 no-padding">
-							<div class="card-item">
-								<a href="#" class="card__link">
-									<div class="card card--big" style="background-image: url(./img/content/1.png)">
-										<div class="text-center">
-											<span class="card__title card__title--big">World of warcraft</span>
-											<br>
-											<span class="card__subtitle card__subtitle--big">Золото, луты, прокачка, услуги...</span>
-										</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="product-description product-description--left">
+								<div class="card card--mini card--product" style="background-image: url(./img/product/1.png)"></div>
+								<div class="product-description__content">
+									<div class="product-description__title">
+										Описание:
 									</div>
-								</a>
+									<div class="product-description__text">
+										<p>
+											Убийство последнего босса в Цитадели Адского Пламени в героическом режиме. Прекрасная возможность получить достижение, а если повезёт, то и добычу с босса. И не стоит забывать, с выходом патча 6.2.3 за убийство Архимонда в Героическом режиме будут давать цепочку квестов, за которые можно получить маунта Хранителя Рощи.
+										</p>
+									</div>
+									<div class="product-description__title">
+										Вы получите:
+									</div>
+									<div class="product-description__text">
+										<p>
+											Убийство последнего босса в Цитадели Адского Пламени в героическом режиме. Прекрасная возможность получить достижение, а если повезёт, то и добычу с босса. И не стоит забывать, с выходом патча 6.2.3 за убийство Архимонда в Героическом режиме будут давать.
+										</p>
+									</div>
+									<div class="product-description__title">
+										Требования:
+									</div>
+									<div class="product-description__text">
+										<div><span class="list-circle"></span>Персонаж 100 уровня</div>
+										<div><span class="list-circle"></span>Передача аккаунта</div>
+									</div>
+									<div class="product-description__title">
+										Остались вопросы?
+									</div>
+									<div class="product-description__text">
+										<p>
+											При возникновении любых вопросов, связанных с предоставлением услуги, смело обращайтись <a class="product-description__link" href="#">к нашим операторам.</a>
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-6 no-padding">
-							<div class="card-item">
-								<a href="#" class="card__link">
-									<div class="card card--big" style="background-image: url(./img/content/2.png)">
-										<div class="text-center">
-											<span class="card__title card__title--big">Blade and soul</span>
-											<br>
-											<span class="card__subtitle card__subtitle--big">Золото</span>
+						<div class="col-xs-12 col-sm-12 col-md-6 no-padding">
+							<div class="product-description product-description--right">
+								<div class="product-description__price">
+									4190 <span class="rub rub--big">Р</span>
+								</div>
+
+								<div class="product-description__title">
+									Оформить заказ:
+								</div>
+								<div class="order">
+									<form class="form-horizontal">
+										<div class="form-group form-group--margin">
+											<div class="row no-padding">
+												<div class="col-md-6">
+													<label class="control-label">E-mail</label>
+												</div>
+												<div class="col-md-6">
+													<input id="email" name="email" type="text" class="form-control form-control--color">
+												</div>
+											</div>
 										</div>
-									</div>
-								</a>
+										<div class="form-group form-group--margin">
+											<div class="row no-padding">
+												<div class="col-md-6">
+													<label class="control-label">Skype / VK / WhatsApp
+														<span class="circle-question">
+															<span class="circle-question__icon">?</span>
+														</span>
+													</label>
+												</div>
+												<div class="col-md-6">
+													<input id="other" name="other" type="text" class="form-control form-control--color">
+												</div>
+											</div>
+										</div>
+										<div class="form-group form-group--margin">
+											<div class="row no-padding">
+												<div class="col-md-6">
+													<label class="control-label">Номер телефона
+														<span class="circle-question">
+															<span class="circle-question__icon">?</span>
+														</span>
+													</label>
+												</div>
+												<div class="col-md-6">
+													<input id="phone" name="phone" type="text" class="form-control form-control--color">
+												</div>
+											</div>
+										</div>
+										<div class="form-group form-group--margin">
+											<div class="row no-padding">
+												<div class="col-md-6">
+													<label class="control-label">Способ оплаты</label>
+												</div>
+												<div class="col-xs-12 col-sm-12 col-md-6">
+													<select class="selectpicker">
+														<option value="PayPal1">PayPal 1</option>
+														<option value="PayPal2">PayPal 2</option>
+														<option value="PayPal3">PayPal 3</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="form-group form-group--margin">
+											<div class="row no-padding">
+												<div class="col-md-8">
+													<label class="control-label">Ваша накопительная скидка:</label>
+												</div>
+												<div class="col-md-4">
+
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-3 col-md-3 no-padding">
-							<div class="card-item">
-								<a href="#" class="card__link">
-									<div class="card card--mini" style="background-image: url(./img/content/3.png)">
-										<div class="text-center">
-											<span class="card__title card__title--small">Diablo 3</span>
-											<br>
-											<span class="card__subtitle card__subtitle--small">Золото, луты, прокачка, услуги...</span>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-3 col-md-3 no-padding">
-							<div class="card-item">
-								<a href="#" class="card__link">
-									<div class="card card--mini" style="background-image: url(./img/content/4.png)">
-										<div class="text-center">
-											<span class="card__title card__title--small">Tera</span>
-											<br>
-											<span class="card__subtitle card__subtitle--small">Золото</span>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-3 col-md-3 no-padding">
-							<div class="card-item">
-								<a href="#" class="card__link">
-									<div class="card card--mini" style="background-image: url(./img/content/5.png)">
-										<div class="text-center">
-											<span class="card__title card__title--small">Star wars</span>
-											<br>
-											<span class="card__subtitle card__subtitle--small">Кредиты, прокачка</span>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-3 col-md-3 no-padding">
-							<div class="card-item">
-								<a href="#" class="card__link">
-									<div class="card card--mini" style="background-image: url(./img/content/6.png)">
-										<div class="text-center">
-											<span class="card__title card__title--small">Lineage 2</span>
-											<br>
-											<span class="card__subtitle card__subtitle--small">Аренда</span>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-3 col-md-3 no-padding">
-							<div class="card-item">
-								<a href="#" class="card__link">
-									<div class="card card--mini" style="background-image: url(./img/content/7.png)">
-										<div class="text-center">
-											<span class="card__title card__title--small">black desert</span>
-											<br>
-											<span class="card__subtitle card__subtitle--small">Прокачка</span>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-3 col-md-3 no-padding">
-							<div class="card-item">
-								<a href="#" class="card__link">
-									<div class="card card--mini" style="background-image: url(./img/content/8.png)">
-										<div class="text-center">
-											<span class="card__title card__title--small">Tes online</span>
-											<br>
-											<span class="card__subtitle card__subtitle--small">Золото</span>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-3 col-md-3 no-padding">
-							<div class="card-item">
-								<a href="#" class="card__link">
-									<div class="card card--mini" style="background-image: url(./img/content/3.png)">
-										<div class="text-center">
-											<span class="card__title card__title--small">Vildstar online</span>
-											<br>
-											<span class="card__subtitle card__subtitle--small">Кредиты, прокачка</span>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-3 col-md-3 no-padding">
-							<div class="card-item">
-								<a href="#" class="card__link">
-									<div class="card card--mini" style="background-image: url(./img/content/6.png)">
-										<div class="text-center">
-											<span class="card__title card__title--small">Aion</span>
-											<br>
-											<span class="card__subtitle card__subtitle--small">Кинары</span>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
+
 					</div>
+
 				</div>
 			</div>
 			<footer>
@@ -396,7 +342,9 @@
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 	<script src="bem_components/header/scripts/mobile-menu.js"></script>
+	<script src="bem_components/select/select.js"></script>
 	<script src="//vk.com/js/api/openapi.js?121"></script>
 	<script>
 		VK.Widgets.Group('vkGroups', {
