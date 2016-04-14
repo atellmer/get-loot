@@ -8,10 +8,15 @@
 		var menuBtn = document.querySelector('#menuBtn');
 		var menuContent = document.querySelector('#menuContent');
 		var menuOverlay = document.querySelector('#menuOverlay');
+		var hammerMenuBtn = new Hammer(menuBtn);
+		var hammerMenuOverlay = new Hammer(menuOverlay);
 		var click = 0;
 
-		menuBtn.addEventListener('click', clickMenuBtnHandler);
-		menuOverlay.addEventListener('click', clickMenuOverlayHandler);
+		hammerMenuBtn.on('tap', clickMenuBtnHandler);
+		hammerMenuOverlay.on('tap panleft', clickMenuOverlayHandler);
+
+		//menuBtn.addEventListener('click', clickMenuBtnHandler);
+		//menuOverlay.addEventListener('click', clickMenuOverlayHandler);
 
 		function clickMenuBtnHandler() {
 			click++;
