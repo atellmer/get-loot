@@ -216,7 +216,43 @@
 	cursor pointer
 	background-color #48c9b8
 	user-select none
+	
+	
+.hamburger-icon
+	display inline-block
+	width 15px
+	height 2px
+	background-color #FFF
+	position absolute
+	top 50%
+	left 50%
+	transition all .2s ease-in-out
+	transform translate(-50%, -50%)
+	transform-origin 4px -3px
+	&::before, &::after
+		content ''
+		position absolute
+		width 15px
+		height 2px
+		background-color #FFF
+		transition all .2s ease-in-out
+		transform-origin 50% 50%
 		
+	&::before	
+		transform translateY(-5px)
+		
+	&::after	
+		transform translateY(5px)
+		
+.is-open
+	.hamburger-icon::before
+		transform rotate(-45deg)
+	.hamburger-icon::after
+		transform rotate(45deg)
+	.hamburger-icon
+		transform rotate(90deg)
+		background-color transparent
+	
 .menu--mobile__icon
 	color #FFF
 	position relative

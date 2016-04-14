@@ -22,9 +22,15 @@
 			click++;
 
 			if (click % 2) {
+				if (!menuBtn.classList.contains('is-open')) {
+					menuBtn.classList.add('is-open');
+				}
 				menuContent.style.transform = 'translateX(0px)';
 				menuOverlay.style.display = 'block';
 			} else {
+				if (menuBtn.classList.contains('is-open')) {
+					menuBtn.classList.remove('is-open');
+				}
 				menuContent.style.transform = 'translateX(-180px)';
 				menuOverlay.style.display = 'none';
 			}
@@ -32,6 +38,9 @@
 
 		function clickMenuOverlayHandler() {
 			click = 0;
+			if (menuBtn.classList.contains('is-open')) {
+				menuBtn.classList.remove('is-open');
+			}
 			menuContent.style.transform = 'translateX(-180px)';
 			menuOverlay.style.display = 'none';
 		}
