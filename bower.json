@@ -1,15 +1,20 @@
 {
-	"name": "standard-app",
-	"authors": [
+  "name": "standard-app",
+  "authors": [
     "AlexPlex <atellmer@gmail.com>"
   ],
-	"description": "Standard App",
-	"main": "gulpfile.js",
-	"license": "MIT",
-	"homepage": "",
-	"dependencies": {
-		"bootstrap": "~3.3.6",
-		"bootstrap-select": "^1.10.0",
-		"hammerjs": "hammer.js#^2.0.6"
-	}
+  "description": "Standard App",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "bootstrap-select": "^1.10.0",
+    "hammerjs": "hammer.js#^2.0.6",
+    "font-awesome": "fontawesome#^4.6.1",
+    "titatoggle": "^1.2.8"
+  },
+  "resolutions": {
+    "bootstrap": "~3.3.6"
+  }
 }

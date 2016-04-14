@@ -7,7 +7,9 @@
 	<title>Get loot</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="bower_components/titatoggle/dist/titatoggle-dist-min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="bem_components/common/common.css">
 	<link rel="stylesheet" href="bem_components/header/header.css">
@@ -286,9 +288,41 @@
 												</div>
 											</div>
 										</div>
-
-
-
+										<div class="sum">
+											<span class="sum__title">Итого:</span>
+											<span class="sum__price sum__price--old"><span class="strike"></span>4190 <i class="fa fa-rub" aria-hidden="true"></i></span>
+											<span class="sum__price sum__price--new">4190 <i class="fa fa-rub" aria-hidden="true"></i></span>
+										</div>
+										<div class="comment-box">
+											<div class="row no-padding">
+												<div class="col-md-6 no-padding">
+													<span class="comment-box__title">Комментарий:</span>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<textarea id="comment" name="comment" class="comment-box__textarea"></textarea>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="confirm">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="checkbox checkbox-slider--b-flat">
+														<label>
+															<input type="checkbox">
+															<span></span>
+														</label>
+													</div>
+													<span class="confirm__title">Я согласен с публичной офертой</span>
+												</div>
+												<div class="col-md-6">
+													<div class="btn-area">
+														<button class="btn confirm__btn paper-shadow-z2">Оплатить</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</form>
 								</div>
 							</div>
