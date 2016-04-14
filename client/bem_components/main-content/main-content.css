@@ -324,7 +324,13 @@
   border-bottom: 1px dashed #48c9b8;
   text-transform: uppercase;
   cursor: pointer;
-  line-height: 2.5;
+  line-height: 1;
+}
+@media screen and (max-width: 992px) {
+  .clarification {
+    margin-bottom: 20px;
+    display: inline-block;
+  }
 }
 .discount__text {
   font-size: 1.4rem;
@@ -428,4 +434,77 @@
 }
 .checkbox-slider--b-flat input + span::after {
   margin: 7px 0 0 0;
+}
+.hover-block {
+  position: absolute;
+  top: 40px;
+  z-index: 5;
+  width: calc(100% - 10px);
+  height: auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: none;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+@media screen and (max-width: 992px) {
+  .hover-block {
+    width: calc(100% - 30px);
+  }
+}
+#hover-trigger-1:hover #hover-block-1 {
+  display: block;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#hover-trigger-2:hover #hover-block-2 {
+  display: block;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.hover-block__content {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #48c9b8;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.hover-block__content::after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 25%;
+  width: 20px;
+  height: 20px;
+  background-image: url("./img/triangle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+@media screen and (max-width: 992px) {
+  .hover-block__content::after {
+    left: 30px;
+  }
+}
+.hover-block__text {
+  color: #000;
+  text-transform: none;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
