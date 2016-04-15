@@ -78,12 +78,8 @@ a:focus {
 .container-fluid {
   background: #fff;
   padding: 0;
-  background-image: url("./img/common-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  width: 100%;
+  height: auto;
   margin-top: -1px;
 }
 .content {
@@ -93,4 +89,36 @@ a:focus {
   height: auto;
   margin: 0 auto;
   padding: 25px;
+  z-index: 1;
+}
+.header__bg {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 800px;
+  background-image: url("./img/header-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.footer__bg {
+  position: relative;
+  z-index: 0;
+  margin-top: -600px;
+  width: 100%;
+  height: 600px;
+  background-image: url("./img/footer-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+@media screen and (max-width: 992px) {
+  .footer__bg {
+    margin-top: -1000px;
+    height: 1000px;
+  }
 }
