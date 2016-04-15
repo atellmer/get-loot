@@ -288,6 +288,9 @@
     padding: 0 40px !important;
   }
 }
+.menu--with-logentry .menu-link {
+  margin-top: -1px;
+}
 .menu-area .menu-link,
 .menu-area .menu-link:hover,
 .menu-area .menu-link:active,
