@@ -84,6 +84,7 @@ a:focus {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  margin-top: -1px;
 }
 .content {
   position: relative;
