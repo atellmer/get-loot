@@ -288,9 +288,6 @@
     padding: 0 40px !important;
   }
 }
-.menu--with-logentry .menu-link {
-  margin-top: -1px;
-}
 .menu-area .menu-link,
 .menu-area .menu-link:hover,
 .menu-area .menu-link:active,
@@ -337,9 +334,10 @@
 }
 .menu-area .logentry {
   background-color: #39393d;
-  padding: 10px 25px;
+  padding: 9px 25px 11px 25px;
   color: #fff;
   text-align: left;
+  margin-top: -1px;
 }
 .menu-area .logentry__link {
   -webkit-transition: all 0.2s ease-in-out;
