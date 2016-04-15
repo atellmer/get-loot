@@ -4,7 +4,6 @@
 	position relative
 	width 100%
 	height auto
-	min-height 1000px
 	padding 10px 10px 55px 10px
 	background-color #FFF
 	z-index 4
@@ -345,6 +344,7 @@
 	transition all .2s ease-in-out
 	display none
 	opacity 0
+	text-align left
 	@media screen and (max-width:992px)
 		width calc(100% - 30px)
 	
@@ -355,6 +355,16 @@
 		
 #hover-trigger-2:hover
 	#hover-block-2
+		display block
+		opacity 1
+		
+#hover-trigger-phone:hover
+	#hover-block-phone
+		display block
+		opacity 1
+		
+#hover-trigger-social:hover
+	#hover-block-social
 		display block
 		opacity 1
 		
@@ -370,16 +380,27 @@
 .hover-block__content::after
 	content ''
 	position absolute
-	top -12px
-	left 25%
+	top -10px
+	left calc(25% - 1px)
 	width 20px
 	height 20px
-	background-image url(./img/triangle.png)
-	background-position center
-	background-repeat no-repeat
-	background-size cover
+	transform rotate(45deg)
+	border 1px solid #48c9b8
+	background-color #FFF
 	@media screen and (max-width:992px)
-		left 30px
+		left 29px
+		
+.hover-block__content::before
+	content ''
+	position absolute
+	top 0px
+	left calc(25% - 4px)
+	width 26px
+	height 20px
+	background-color #FFF
+	z-index 1
+	@media screen and (max-width:992px)
+		left 26px
 	
 .hover-block__text
 	color #000

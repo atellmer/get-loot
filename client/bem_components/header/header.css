@@ -72,11 +72,6 @@
   -moz-background-size: cover;
   background-size: cover;
   display: inline-block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 @media screen and (max-width: 600px) {
   .header-main-area .contacts__icon {
@@ -86,8 +81,8 @@
 }
 .header-main-area .contacts__icon--phone {
   top: 3px;
-  width: 21px;
-  height: 21px;
+  width: 19px;
+  height: 19px;
   background-image: url("./img/icons/phone.png");
 }
 @media screen and (max-width: 600px) {
@@ -97,8 +92,8 @@
 }
 .header-main-area .contacts__icon--skype {
   top: 3px;
-  width: 21px;
-  height: 23px;
+  width: 18px;
+  height: 20px;
   background-image: url("./img/icons/skype.png");
 }
 @media screen and (max-width: 600px) {
@@ -107,9 +102,9 @@
   }
 }
 .header-main-area .contacts__icon--chat {
-  top: -5px;
-  width: 21px;
-  height: 20px;
+  top: -8px;
+  width: 19px;
+  height: 18px;
   background-image: url("./img/icons/chat.png");
 }
 @media screen and (max-width: 600px) {
@@ -122,18 +117,13 @@
   display: inline-block;
   font-weight: 300;
   line-height: 1;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 @media screen and (max-width: 600px) {
   .header-main-area .contacts__text {
     font-size: 1.2rem !important;
     display: block;
     text-align: center;
-    margin: 3px 0;
+    margin: 4px 0;
   }
 }
 .header-main-area .contacts__text--bold {
@@ -141,6 +131,11 @@
 }
 .header-main-area .contacts__item {
   margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  .header-main-area .contacts__item {
+    margin: 7px 0;
+  }
 }
 .header-main-area .contacts__text--phone {
   font-size: 2rem;
@@ -158,11 +153,11 @@
 .header-main-area .contacts__text--chat {
   font-size: 1.7rem;
 }
-.contacts__text--small {
+.header-main-area .contacts__text--small {
   font-size: 1.2rem;
 }
 @media screen and (max-width: 600px) {
-  .contacts__text--small {
+  .header-main-area .contacts__text--small {
     display: none;
   }
 }
@@ -178,6 +173,7 @@
   -moz-background-size: cover;
   background-size: cover;
   display: inline-block;
+  background-image: url("./img/icons/icons.png");
 }
 @media screen and (max-width: 600px) {
   .header-main-area .social__icon {
@@ -189,34 +185,19 @@
   top: 3px;
   width: 22px;
   height: 22px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-image: url("./img/icons/vk.png");
+  background-position: 0 -98px;
 }
 .header-main-area .social__icon--tw {
   top: 3px;
   width: 22px;
   height: 22px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-image: url("./img/icons/tw.png");
+  background-position: 0 -48px;
 }
 .header-main-area .social__icon--mail {
   top: 3px;
   width: 25px;
   height: 17px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-image: url("./img/icons/mail.png");
+  background-position: 0 -6px;
 }
 @media screen and (max-width: 600px) {
   .header-main-area .social__icon--mail {
@@ -228,11 +209,6 @@
   top: -4px;
   color: #fff;
   font-size: 1.6rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 @media screen and (max-width: 600px) {
   .header-main-area .social__link {
@@ -248,18 +224,18 @@
   color: #46ebd6;
 }
 .header-main-area .social__item:hover .social__icon--vk {
-  background-image: url("./img/icons/vk-h.png");
+  background-position: 0 -124px;
 }
 .header-main-area .social__item:hover .social__icon--tw {
-  background-image: url("./img/icons/tw-h.png");
+  background-position: 0 -74px;
 }
 .header-main-area .social__item:hover .social__icon--mail {
-  background-image: url("./img/icons/mail-h.png");
+  background-position: 0 -31px;
 }
 .header-main-area .social__link--mail {
   top: -1px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1170px) {
   .menu-area .menu--desktop {
     display: none;
   }
@@ -302,6 +278,15 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  padding: 0 40px;
+}
+.menu--with-logentry {
+  padding: 0 0 0 40px !important;
+}
+@media screen and (max-width: 1170px) {
+  .menu--with-logentry {
+    padding: 0 40px !important;
+  }
 }
 .menu-area .menu-link,
 .menu-area .menu-link:hover,
@@ -319,11 +304,12 @@
   text-transform: uppercase;
   font-weight: 900;
   padding: 20px 30px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #fff;
 }
 .menu-area .menu-link:hover,
 .menu-area .menu-link:hover:hover,
@@ -341,6 +327,10 @@
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+.menu-area .menu-link--active {
+  background-color: #48c9b8;
+  color: #fff;
 }
 .menu-area .logentry {
   background-color: #39393d;

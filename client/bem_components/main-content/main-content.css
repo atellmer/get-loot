@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 1000px;
   padding: 10px 10px 55px 10px;
   background-color: #fff;
   z-index: 4;
@@ -450,6 +449,7 @@
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  text-align: left;
 }
 @media screen and (max-width: 992px) {
   .hover-block {
@@ -463,6 +463,18 @@
   filter: none;
 }
 #hover-trigger-2:hover #hover-block-2 {
+  display: block;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#hover-trigger-phone:hover #hover-block-phone {
+  display: block;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#hover-trigger-social:hover #hover-block-social {
   display: block;
   opacity: 1;
   -ms-filter: none;
@@ -485,20 +497,36 @@
 .hover-block__content::after {
   content: '';
   position: absolute;
-  top: -12px;
-  left: 25%;
+  top: -10px;
+  left: calc(25% - 1px);
   width: 20px;
   height: 20px;
-  background-image: url("./img/triangle.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: 1px solid #48c9b8;
+  background-color: #fff;
 }
 @media screen and (max-width: 992px) {
   .hover-block__content::after {
-    left: 30px;
+    left: 29px;
+  }
+}
+.hover-block__content::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: calc(25% - 4px);
+  width: 26px;
+  height: 20px;
+  background-color: #fff;
+  z-index: 1;
+}
+@media screen and (max-width: 992px) {
+  .hover-block__content::before {
+    left: 26px;
   }
 }
 .hover-block__text {

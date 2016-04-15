@@ -49,7 +49,7 @@
 }
 .category-head-area .category-head__title {
   position: relative;
-  font-size: 1.8rem;
+  font-size: 3.3rem;
   font-weight: 900;
   color: #000;
   text-transform: uppercase;
@@ -63,8 +63,17 @@
   z-index: 5;
   margin: 20px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .category-head-area .category-head__title {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+}
+.category-head-area .category-head__title--small {
+  font-size: 1.9rem;
+}
+@media screen and (max-width: 768px) {
+  .category-head-area .category-head__title--small {
     font-size: 1.3rem;
     padding: 10px;
   }
