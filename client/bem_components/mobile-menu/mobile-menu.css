@@ -160,6 +160,9 @@
 .list__item:hover {
   background-color: #4db6ac;
 }
+.list__item--active {
+  background-color: #4db6ac;
+}
 .menu-divider {
   width: 100%;
   height: 1px;
