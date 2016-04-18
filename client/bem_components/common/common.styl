@@ -28,6 +28,16 @@ $bg-color = #FFF;
 .paper-shadow-z5
 	box-shadow 0 19px 60px rgba(0,0,0,0.3), 0 15px 20px rgba(0,0,0,0.22)!important
 	
+.hide--mobile
+	display block
+	@media screen and (max-width:992px)
+		display none
+		
+.show--mobile
+	display none
+	@media screen and (max-width:992px)
+		display block
+	
 ::selection
 	background #80CBC4
 	
@@ -82,7 +92,9 @@ a, a:hover, a:active, a:focus
 	background-repeat no-repeat
 	background-size cover
 	@media screen and (max-width:992px)
-		margin-top -1000px
-		height 1000px
+		margin-top -1200px
+		height 1200px
+		
+
 	
 	

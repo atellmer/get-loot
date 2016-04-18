@@ -54,6 +54,22 @@
   -webkit-box-shadow: 0 19px 60px rgba(0,0,0,0.3), 0 15px 20px rgba(0,0,0,0.22) !important;
   box-shadow: 0 19px 60px rgba(0,0,0,0.3), 0 15px 20px rgba(0,0,0,0.22) !important;
 }
+.hide--mobile {
+  display: block;
+}
+@media screen and (max-width: 992px) {
+  .hide--mobile {
+    display: none;
+  }
+}
+.show--mobile {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .show--mobile {
+    display: block;
+  }
+}
 ::selection {
   background: #80cbc4;
 }
@@ -118,7 +134,7 @@ a:focus {
 }
 @media screen and (max-width: 992px) {
   .footer__bg {
-    margin-top: -1000px;
-    height: 1000px;
+    margin-top: -1200px;
+    height: 1200px;
   }
 }

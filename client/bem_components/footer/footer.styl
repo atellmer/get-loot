@@ -14,10 +14,8 @@
 		color #46ebd6
 	@media screen and (max-width:992px)
 		text-align center
-		text-shadow 0 0 1px #333
-	@media screen and (max-width:600px)
 		font-size 1rem
-		margin 20px 
+		margin 10px 5px
 	
 .footer-area .contacts__text
 	color #FFF
@@ -94,9 +92,157 @@
 	flex-direction column
 	flex-wrap wrap
 	justify-content flex-start
-	@media screen and (max-width:600px)
+	@media screen and (max-width:992px)
 		flex-direction row
 		justify-content center
+		
+.footer-area .footer-contacts
+	width 100%
+	height auto
+	margin 20px 0
+	
+
+.footer-area .wrap-block
+	@media screen and (max-width:992px)
+		display flex
+		flex-direction row
+		flex-wrap nowrap
+		justify-content center
+		align-items center
+	
+.footer-area .contacts
+	display inline-block
+	
+.footer-area .contacts__icon
+	position relative
+	margin  0 12px
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	display inline-block
+	@media screen and (max-width:992px)
+		display block
+		margin 0 auto
+	
+.footer-area .contacts__icon--phone
+	top 3px
+	width 19px
+	height 19px
+	background-image url(./img/icons/phone.png)
+	@media screen and (max-width:992px)
+		top 0
+		
+.footer-area .contacts__icon--skype
+	top 3px
+	width 18px
+	height 20px
+	background-image url(./img/icons/skype.png)
+	@media screen and (max-width:992px)
+		top 0
+	
+.footer-area .contacts__icon--chat
+	top -8px
+	width 19px
+	height 18px
+	background-image url(./img/icons/chat.png)
+	@media screen and (max-width:992px)
+		top 0
+	
+.footer-area .contacts__text
+	color #FFF
+	display inline-block
+	font-weight 300
+	line-height 1
+	@media screen and (max-width:992px)
+		font-size 1.2rem!important
+		display block
+		text-align center
+		margin 4px 0
+	
+.footer-area .contacts__text--bold
+	font-weight 900
+	
+.footer-area .contacts__item
+	margin-bottom 10px
+	@media screen and (max-width:992px)
+		margin 7px 0
+	
+.footer-area .contacts__text--phone
+	font-size 2rem
+	
+.footer-area .contacts__text--skype
+	font-size 1.7rem
+	position relative
+	top -5px
+	@media screen and (max-width:600px)
+		top 0px
+		
+.footer-area .contacts__text--chat
+	font-size 1.7rem
+
+.footer-area .contacts__text--small
+	font-size 1.2rem
+	@media screen and (max-width:600px)
+		display none
+	
+.footer-area .social	
+	display inline-block
+	
+.footer-area .social__icon
+	position relative
+	margin  0 17px
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	display inline-block
+	background-image url(./img/icons/icons.png)
+	@media screen and (max-width:992px)
+		display block
+		margin 0 auto
+	
+.footer-area .social__icon--vk
+	top 3px
+	width 22px
+	height 22px
+	background-position 0 -98px
+	
+.footer-area .social__icon--tw
+	top 3px
+	width 22px
+	height 22px
+	background-position 0 -48px
+	
+.footer-area .social__icon--mail
+	top 3px
+	width 25px
+	height 17px
+	background-position 0 -6px
+	@media screen and (max-width:992px)
+		top 0
+	
+.footer-area .social__link
+	position relative
+	top -4px
+	color #FFF
+	font-size 1.6rem
+	@media screen and (max-width:992px)
+		font-size 1.2rem!important
+		display block
+		top 3px
+		
+.footer-area .social__item
+	margin-bottom 10px
+	&:hover .social__link
+		color #46ebd6
+	&:hover .social__icon--vk
+		background-position 0 -124px
+	&:hover .social__icon--tw
+		background-position 0 -74px
+	&:hover .social__icon--mail
+		background-position 0 -31px
+		
+.footer-area .social__link--mail
+	top -1px
 	
 	
 	
