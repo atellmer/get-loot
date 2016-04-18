@@ -9,7 +9,6 @@
 	text-transform uppercase
 	letter-spacing 1px
 	margin-bottom 20px
-	display block
 	transition all .2s ease-in-out
 	&:hover
 		color #46ebd6
@@ -18,6 +17,7 @@
 		text-shadow 0 0 1px #333
 	@media screen and (max-width:600px)
 		font-size 1rem
+		margin 20px 
 	
 .footer-area .contacts__text
 	color #FFF
@@ -87,6 +87,16 @@
 	flex-direction row
 	flex-wrap nowrap
 	justify-content flex-end
+	
+.footer-area .footer-menu
+	max-height 200px
+	display flex
+	flex-direction column
+	flex-wrap wrap
+	justify-content flex-start
+	@media screen and (max-width:600px)
+		flex-direction row
+		justify-content center
 	
 	
 	
